@@ -4,6 +4,7 @@
         <title>WEB - Javascript</title>
         <meta charset="utf8">
         <link rel="stylesheet" href="style.css">
+        
     </head>
     <body>
         <h1><a href="index.html">WEB</a></h1>
@@ -16,6 +17,34 @@
                 <li><a href="5.html">database</a></li>
                 <li><a href="6.html">Web Hosting</a></li>
             </ol>
+            <script>
+                function toDay(){
+                    var self = document.querySelector('#day_night');
+                    var body = document.querySelector('body');
+                    body.style.backgroundColor = 'black';
+                    body.style.color = 'white';
+                    self.value = 'day';
+                    var a = document.querySelectorAll('a');
+                    var i = 0;
+                    while(i< a.length){
+                        a[i].style.color = 'white';
+                        i = i + 1;
+
+                }
+                function toNight(){
+                    var self = document.querySelector('#day_night');
+                    var body = document.querySelector('body');
+                    body.style.backgroundColor = 'white';
+                    body.style.color = 'black';
+                    self.value = 'night';
+                    var a = document.querySelectorAll('a');
+                    var i = 0;
+                    while(i< a.length){
+                        a[i].style.color = 'black';
+                        i = i + 1;
+
+                }
+            </script>
             <div id="li">
                 <input id="day_night" type="button" value="night" onclick="
                 var body = document.querySelector('body');
@@ -23,14 +52,35 @@
                     body.style.backgroundColor = 'black';
                     body.style.color = 'white';
                     this.value = 'day';
+                    //이 웹페이지에 있는 모든 a태그의 폰트색을 white로 바꿔
+                    var a = document.querySelectorAll('a');
+                    var i = 0;
+                    while(i< a.length){
+                        a[i].style.color = 'white';
+                        i = i + 1
+                    }
+
                     }
                 else {
                     body.style.backgroundColor = '#ffffff';
                     body.style.color='black';
                     this.value ='night';
+                    var list = document.querySelectorAll('a');
+                    var i = 0;
+                    while(i< list.length){
+                        list[i].style.color = 'black';
+                        i = i + 1
+                    }
                     }
                     ">
-        
+                <script>
+                var list = document.querySelectorAll('a');
+                var i = 0;
+                while(i< list.length){
+                    list[i].style.color = 'black';
+                    i = i + 1
+                }
+                 </script>
 
 
             <h2>Javascript</h2>
