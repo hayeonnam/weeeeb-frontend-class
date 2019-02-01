@@ -1,10 +1,10 @@
 h1{
-    border-bottom:10px solid red;
+    border-bottom:3px solid burlywood;
     padding:20px;
     margin-bottom:0px;
 }
 ol{
-    border-right:10px  solid cadetblue;
+    border-right:3px  solid cadetblue;
     width: 100px;
     margin-top:0px;
     padding-top:25px;
